@@ -38,11 +38,11 @@ route.post('/aluno/edit/:id', loginRequired, alunoController.edit);
 route.get('/aluno/delete/:id', loginRequired, alunoController.delete);
 
 // Rotas de professor
-route.get('/professor/index', loginRequired, professorController.index);
-route.get('/professor/list', loginRequired, professorController.list);
-route.post('/professor/register', loginRequired, professorController.register);
-route.get('/professor/index/:id', loginRequired, professorController.editIndex);
-route.post('/professor/edit/:id', loginRequired, professorController.edit);
-route.get('/professor/delete/:id', loginRequired, professorController.delete);
+route.get('/professor/index', professorController.index);
+route.get('/professor/list', professorController.list);
+route.post('/professor/register', professorController.register);
+route.get('/professor/index/:id', professorController.editIndex);
+route.post('/professor/edit/:id', professorController.edit);
+route.get('/professor/delete/:id', professorController.delete);
 
 module.exports = route;
