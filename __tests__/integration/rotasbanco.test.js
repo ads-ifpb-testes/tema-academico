@@ -1,10 +1,10 @@
 const request = require('supertest');
-const app = require('../api/api');
+const app = require('../../api/api');
 const mongoose = require('mongoose');
-const { TurmaModel } = require('../src/models/TurmaModel');
-const { ProfessorModel } = require('../src/models/ProfessorModel');
-const { AlunoModel } = require('../src/models/AlunoModel');
-const api = require('../api/api');
+const { TurmaModel } = require('../../src/models/TurmaModel');
+const { ProfessorModel } = require('../../src/models/ProfessorModel');
+const { AlunoModel } = require('../../src/models/AlunoModel');
+const api = require('../../api/api');
 
 
 describe("Integração com o banco de dados", () => {
